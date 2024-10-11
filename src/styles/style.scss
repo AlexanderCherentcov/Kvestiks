@@ -1,0 +1,66 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './components/header';
+@import './components/catalog';
+
+// Общие стили
+body {
+  background-color: #f1eaeabd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #383838;
+}
+
+.btn-reset,
+a {
+  border: none;
+  outline: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+:focus-visible {
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: initial;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

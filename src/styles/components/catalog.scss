@@ -1,0 +1,375 @@
+.catalog {
+  padding-top: 12px;
+  padding-bottom: 30px;
+  // .catalog__container
+
+  &__container {
+  }
+
+  // .catalog__main
+
+  &__main {
+  }
+}
+
+.main-catalog {
+  // .main-catalog__top
+
+  &__top {
+    margin-bottom: 30px;
+  }
+
+  // .main-catalog__bootom
+
+  &__bootom {
+  }
+}
+
+.top-catalog {
+  // .top-catalog__advertisement
+
+  &__advertisement {
+    position: relative;
+
+    &::before {
+      content: 'самый популярный';
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      padding: 3px;
+      border-radius: 7px;
+      background-color: rgb(255, 255, 255, 80%);
+      font-size: 10px;
+    }
+  }
+
+  // .top-catalog__payment
+
+  &__payment {
+  }
+}
+
+.advertisement {
+  // .advertisement__row
+
+  &__row {
+  }
+
+  // .advertisement__text
+
+  &__text {
+  }
+
+  // .advertisement__body
+
+  &__body {
+  }
+
+  // .advertisement__title
+
+  &__title {
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  // .advertisement__rules
+
+  &__rules {
+  }
+
+  // .advertisement__descr
+
+  &__descr {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  // .advertisement__img
+
+  &__img {
+    background-image: url(../assets/images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.rules {
+  // .rules__text
+
+  &__text {
+    background-color: rgb(28, 28, 28, 5%);
+    font-weight: 600;
+  }
+}
+
+.top-payment {
+  // .top-payment__card
+
+  &__card {
+  }
+}
+
+.card-payment {
+  // .card-payment__body
+
+  &__body {
+  }
+
+  // .card-payment__title
+
+  &__title {
+    font-size: 13px;
+  }
+
+  // .card-payment__block-svg
+
+  &__block-svg {
+    svg {
+      width: 100%;
+    }
+  }
+
+  // .card-payment__text
+
+  &__text {
+    font-size: 16px;
+
+    a {
+      display: inline-block;
+      color: #dd4e00;
+      border-bottom: 1px solid #dd4e00;
+      transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+      &:hover,
+      &:focus-visible {
+        color: rgb(63, 63, 124);
+        border-color: rgb(63, 63, 124);
+      }
+    }
+  }
+
+  // .card-payment__btn
+
+  &__btn {
+  }
+}
+
+.block-svg {
+  // .block-svg__svg
+
+  &__svg {
+  }
+}
+
+.btn-payment {
+  background-color: #f77833;
+  color: #fff;
+  padding: 10px 30px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgb(63, 63, 124);
+    color: #f77833;
+  }
+}
+
+.bottom-catalog {
+  // .bottom-catalog__reviews
+
+  &__reviews {
+  }
+}
+.reviews {
+  // .reviews__title
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #424242;
+  }
+
+  // .reviews__counter
+
+  &__counter {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    font-size: 15px;
+  }
+
+  // .reviews__swiper
+
+  &__swiper {
+    padding-bottom: 40px;
+  }
+
+  // .reviews__wrapper
+
+  &__wrapper {
+  }
+
+  // .reviews__slide
+
+  &__slide {
+  }
+
+  // .reviews__card
+
+  &__card {
+    min-height: 400px;
+  }
+
+  // .reviews__pagination
+
+  &__pagination {
+  }
+
+  // .reviews__link
+
+  &__link {
+  }
+
+  // .reviews__btn
+
+  &__btn {
+    width: 50%;
+    text-align: center;
+  }
+
+  // .reviews__payment
+
+  &__payment {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+
+    @media (max-width: 992px) {
+      .top-payment {
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.card-reviews {
+  // .card-reviews__body
+
+  &__body {
+  }
+
+  // .card-reviews__date
+
+  &__date {
+  }
+
+  // .card-reviews__info
+
+  &__info {
+    font-weight: 700;
+  }
+
+  // .card-reviews__name
+
+  &__name {
+    font-weight: 800;
+    font-size: 16px;
+  }
+
+  // .card-reviews__rating
+
+  &__rating {
+    margin-bottom: auto;
+  }
+
+  // .card-reviews__title
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #383838;
+  }
+
+  // .card-reviews__text
+
+  &__text {
+  }
+}
+
+.payment-reviews {
+  // .payment-reviews__btn
+
+  &__btn {
+  }
+}
+
+.breadcrumb {
+  --bs-breadcrumb-item-padding-x: 5px;
+  font-size: 14px;
+  color: #424242;
+}
+
+.arrow {
+  margin-right: 5px;
+}
+
+.breadcrumb-item {
+  display: flex; /* Используем flex для размещения стрелки */
+  align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ''; /* Убираем псевдоэлемент */
+}
+
+@media (max-width: 992px) {
+  .top-payment {
+    display: none;
+    visibility: hidden;
+  }
+
+  .reviews__payment {
+    display: block;
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+    a {
+      width: 100%;
+      border: none;
+    }
+  }
+
+  .reviews__btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 872px) {
+  .advertisement__title {
+    font-size: 28px;
+  }
+
+  .advertisement__descr {
+    width: 100%;
+  }
+
+  .reviews__title {
+    font-size: 24px;
+  }
+
+  .reviews__counter {
+    left: 0;
+    top: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advertisement__img {
+    height: 300px;
+  }
+}
