@@ -1,0 +1,23 @@
+{
+  "name": "Kvestiks",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel ./src/index.html --no-cache",
+    "build": "parcel build ./src/index.html --public-url ./ --no-source-maps --no-cache",
+    "deploy": "git checkout build && xcopy /E /I dist\\* . && git add . && git commit -m 'Update production files' && git push && rmdir /S /Q node_modules && rmdir /S /Q .parcel-cache && del /Q package-lock.json && git checkout main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "sass": "^1.79.4",
+    "swiper": "^11.1.14",
+    "normalize.css": "^8.0.1",
+    "bootstrap": "^5.3.3"
+  }
+}
