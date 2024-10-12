@@ -7,5 +7,5 @@ dist/
 .parcel-cache/
 
 # Configuration files
-.eslintrc
+.eslintrc.js
 .prettierrc
